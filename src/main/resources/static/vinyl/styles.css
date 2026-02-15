@@ -1,0 +1,35 @@
+html, body {
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+p {
+    
+}
+
+img {
+    width:100px;
+    height:100px;
+}
+
+.album {
+    margin:10px;
+    width:200px;
+    text-align: center;
+    background-color: greenyellow;
+}
+
+
+#albumcontainer {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height:auto;
+    outline:1px solid black;
+    background-color: darkgray;
+}
+
