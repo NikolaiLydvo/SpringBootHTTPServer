@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div id="albumcontainer">
+    <h1>test</h1>
+    <#list albums as item>
+        <div class="album">
+            <p>${item.artist}</p>
+            <p>${item.albumName}</p>
+            <img src="${item.imageURL}" alt="missing image">
+        </div>
+    </#list>
+</div>
+</body>
+</html>
