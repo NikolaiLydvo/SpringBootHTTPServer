@@ -7,6 +7,7 @@ import java.io.File;
 
 @org.springframework.stereotype.Controller
 public class Controller {
+
   @GetMapping("/vinylSamling")
   public String vinylSamling(Model model) {
     File csvfile = new File("vinylSamling.csv");
