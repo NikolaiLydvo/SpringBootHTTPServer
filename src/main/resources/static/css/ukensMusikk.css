@@ -1,0 +1,43 @@
+html, body {
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+#chartsContainer {
+    display:flex;
+    flex-direction: row;
+
+}
+
+#albumContainer {
+    flex:1;
+    background-color: greenyellow;
+}
+.album {
+    margin:10px;
+    width:200px;
+    text-align: center;
+    background-color: gray;
+}
+
+#artistContainer {
+    flex:1;
+    background-color: darkcyan;
+}
+
+.artist {
+    width:100%;
+    height:20%;
+    text-align: center;
+}
+
+#trackContainer {
+    flex:1;
+    background-color: crimson;
+}
+
+.song {
+    width:100%;
+    height:100%;
+}
