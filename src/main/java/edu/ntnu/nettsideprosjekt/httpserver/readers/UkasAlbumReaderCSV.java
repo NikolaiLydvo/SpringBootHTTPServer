@@ -1,4 +1,6 @@
-package edu.ntnu.nettsideprosjekt.httpserver;
+package edu.ntnu.nettsideprosjekt.httpserver.readers;
+import edu.ntnu.nettsideprosjekt.httpserver.readers.storageClasses.UkasAlbumInfo;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;

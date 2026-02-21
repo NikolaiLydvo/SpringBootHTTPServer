@@ -1,4 +1,4 @@
-package edu.ntnu.nettsideprosjekt.httpserver;
+package edu.ntnu.nettsideprosjekt.httpserver.readers.storageClasses;
 
 public class UkasAlbumInfo {
   private final String artist;

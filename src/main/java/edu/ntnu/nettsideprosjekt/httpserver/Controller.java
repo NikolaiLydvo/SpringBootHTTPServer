@@ -1,5 +1,7 @@
 package edu.ntnu.nettsideprosjekt.httpserver;
 
+import edu.ntnu.nettsideprosjekt.httpserver.readers.UkasAlbumReaderCSV;
+import edu.ntnu.nettsideprosjekt.httpserver.readers.VinylSamlingCSVReader;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
