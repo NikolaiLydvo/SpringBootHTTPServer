@@ -1,11 +1,11 @@
 package edu.ntnu.nettsideprosjekt.httpserver.readers.storageClasses;
 
-public class UkasSangerInfo {
+public class UkensSangerInfo {
   private final String rank;
   private final String artistName;
   private final String trackName;
   private final String playcount;
-  public UkasSangerInfo(String rank, String artistName, String trackName, String playcount) {
+  public UkensSangerInfo(String rank, String artistName, String trackName, String playcount) {
     this.rank = rank;
     this.artistName = artistName;
     this.trackName = trackName;

@@ -1,8 +1,8 @@
 package edu.ntnu.nettsideprosjekt.httpserver;
 
-import edu.ntnu.nettsideprosjekt.httpserver.readers.UkasAlbumReaderCSV;
-import edu.ntnu.nettsideprosjekt.httpserver.readers.UkasArtisterCSVReader;
-import edu.ntnu.nettsideprosjekt.httpserver.readers.UkasSangerCSVReader;
+import edu.ntnu.nettsideprosjekt.httpserver.readers.UkensAlbumReaderCSV;
+import edu.ntnu.nettsideprosjekt.httpserver.readers.UkensArtisterCSVReader;
+import edu.ntnu.nettsideprosjekt.httpserver.readers.UkensSangerCSVReader;
 import edu.ntnu.nettsideprosjekt.httpserver.readers.VinylSamlingCSVReader;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,7 +22,7 @@ public class Controller {
   @GetMapping("/ukasAlbum")
   public String ukasAlbum(Model model) {
     File csvFile = new File("ukasAlbum.csv");
-    UkasAlbumReaderCSV reader =  new UkasAlbumReaderCSV(csvFile);
+    UkensAlbumReaderCSV reader =  new UkensAlbumReaderCSV(csvFile);
     model.addAttribute("albums", reader.read());
     return "ukasAlbum";
   }
@@ -32,13 +32,14 @@ public class Controller {
     File ukensArtisterCsvFile = new File("ukensArtister.csv");
     File ukensSangerCsvFile = new File("ukensSanger.csv");
 
-    UkasAlbumReaderCSV albumReader = new UkasAlbumReaderCSV(ukensAlbumCsvFile);
-    UkasArtisterCSVReader artistReader = new UkasArtisterCSVReader(ukensArtisterCsvFile);
-    UkasSangerCSVReader songReader = new UkasSangerCSVReader(ukensSangerCsvFile);
+    UkensAlbumReaderCSV albumReader = new UkensAlbumReaderCSV(ukensAlbumCsvFile);
+    UkensArtisterCSVReader artistReader = new UkensArtisterCSVReader(ukensArtisterCsvFile);
+    UkensSangerCSVReader songReader = new UkensSangerCSVReader(ukensSangerCsvFile);
 
     model.addAttribute("albums", albumReader.read());
     model.addAttribute("artists", artistReader.read());
     model.addAttribute("songs", songReader.read());
+
     return "ukensMusikk";
   }
 }

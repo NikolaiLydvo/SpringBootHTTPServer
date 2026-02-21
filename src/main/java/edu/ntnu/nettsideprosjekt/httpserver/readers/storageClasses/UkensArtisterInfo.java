@@ -1,9 +1,9 @@
 package edu.ntnu.nettsideprosjekt.httpserver.readers.storageClasses;
 
-public class UkasArtisterInfo {
+public class UkensArtisterInfo {
   private final String artistName;
   private final String artistURL;
-  public UkasArtisterInfo(String artistName, String artistURL) {
+  public UkensArtisterInfo(String artistName, String artistURL) {
     this.artistName = artistName;
     this.artistURL = artistURL;
   }
