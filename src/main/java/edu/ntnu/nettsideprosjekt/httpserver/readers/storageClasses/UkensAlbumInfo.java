@@ -1,10 +1,10 @@
-package edu.ntnu.nettsideprosjekt.httpserver;
+package edu.ntnu.nettsideprosjekt.httpserver.readers.storageClasses;
 
-public class UkasAlbumInfo {
+public class UkensAlbumInfo {
   private final String artist;
   private final String albumName;
   private final String imageURL;
-  public UkasAlbumInfo(String artist, String albumName, String imageURL) {
+  public UkensAlbumInfo(String artist, String albumName, String imageURL) {
     this.artist = artist;
     this.albumName = albumName;
     this.imageURL = imageURL;

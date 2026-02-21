@@ -1,4 +1,4 @@
-package edu.ntnu.nettsideprosjekt.httpserver;
+package edu.ntnu.nettsideprosjekt.httpserver.readers.storageClasses;
 
 public class VinylAlbumInfo {
   private final String imageURL;

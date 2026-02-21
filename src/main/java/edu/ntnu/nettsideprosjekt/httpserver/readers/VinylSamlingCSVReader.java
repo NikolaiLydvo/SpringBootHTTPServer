@@ -1,4 +1,6 @@
-package edu.ntnu.nettsideprosjekt.httpserver;
+package edu.ntnu.nettsideprosjekt.httpserver.readers;
+
+import edu.ntnu.nettsideprosjekt.httpserver.readers.storageClasses.VinylAlbumInfo;
 
 import java.io.BufferedReader;
 import java.io.File;
