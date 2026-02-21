@@ -26,7 +26,7 @@ public class Controller {
     model.addAttribute("albums", reader.read());
     return "ukasAlbum";
   }
-  @GetMapping("ukasMusikk")
+  @GetMapping("ukensMusikk")
   public String ukasMusikk(Model model) {
     File ukensAlbumCsvFile = new File("ukensAlbum.csv");
     File ukensArtisterCsvFile = new File("ukensArtister.csv");

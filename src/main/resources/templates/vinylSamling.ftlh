@@ -5,7 +5,6 @@
 </head>
 <body>
 <div id="albumcontainer">
-    <h1>test</h1>
     <#list albums as item>
         <div class="album">
             <p>${item.artist}</p>

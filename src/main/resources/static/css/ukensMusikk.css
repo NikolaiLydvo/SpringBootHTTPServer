@@ -1,43 +1,109 @@
 html, body {
-    height:100%;
+    height:104.5%;
     margin:0;
     padding:0;
 }
 
+img {
+    width:100px;
+    height:100px;
+}
+
 #chartsContainer {
     display:flex;
+    flex-wrap:wrap;
     flex-direction: row;
-
+    align-items: flex-start;
+    width: 100%;
+    height:100%;
+    outline:1px solid black;
 }
 
 #albumContainer {
     flex:1;
-    background-color: greenyellow;
-}
-.album {
-    margin:10px;
-    width:200px;
-    text-align: center;
+    display:flex;
+    align-content:flex-start;
+    flex-direction: row;
+    flex-wrap:wrap;
     background-color: gray;
+    height:100%;
+    outline: solid 1px black;
+
+}
+
+#albumTitle {
+    flex-basis:100%;
+    height:10%;
+    background-color: greenyellow;
+    text-align: center;
+}
+
+.album:nth-child(2) {
+    flex-basis:100%;
+}
+
+.album:nth-child(3) {
+    flex-basis:50%;
+}
+.album:nth-child(4) {
+    flex-basis:50%;
+}
+
+.album {
+    text-align: center;
+    flex-basis:33.33%;
+    background-color: greenyellow;
+    outline: solid 1px black;
 }
 
 #artistContainer {
     flex:1;
+    display:flex;
+    align-content:flex-start;
+    flex-direction: row;
+    flex-wrap:wrap;
+    background-color: gray;
+    height:100%;
+    outline: solid 1px black;
+}
+
+#artistTitle {
+    flex-basis:100%;
+    height:10%;
     background-color: darkcyan;
+    text-align: center;
 }
 
 .artist {
-    width:100%;
-    height:20%;
+    flex-basis:100%;
+    flex-grow:1;
     text-align: center;
+    background-color: darkcyan;
+    outline: solid 1px black;
 }
 
 #trackContainer {
     flex:1;
+    display:flex;
+    align-content:flex-start;
+    flex-direction: row;
+    flex-wrap:wrap;
+    background-color: gray;
+    height:100%;
+    outline: solid 1px black;
+}
+
+#songsTitle {
+    flex-basis:100%;
+    height:10%;
     background-color: crimson;
+    text-align: center;
 }
 
 .song {
-    width:100%;
-    height:100%;
+    flex-basis:100%;
+    flex-grow:1;
+    background-color: crimson;
+    text-align: center;
+    outline: solid 1px black;
 }
