@@ -42,4 +42,14 @@ public class Controller {
 
     return "ukensMusikk";
   }
+
+  @GetMapping("/hangman")
+  public String hangman(Model model) {
+    return "hangman";
+  }
+
+  @GetMapping("/flappyBird")
+  public String flappyBird(Model model) {
+    return "flappyBird";
+  }
 }
