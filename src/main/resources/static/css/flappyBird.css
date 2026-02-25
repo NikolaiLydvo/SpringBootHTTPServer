@@ -1,0 +1,35 @@
+div {
+    border:1px solid black;
+}
+
+#main {
+    width:80%;
+    height:500px;
+    margin:auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+#bird {
+    width:50px;
+    height:50px;
+    position: absolute;
+    background-color: yellow;
+    top:200px;
+    right:700px;
+}
+
+.pipe {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100%;
+    width:50px;
+    position: absolute;
+}
+
+.pipe > div {
+    height:30%;
+    background-color: green;
+}

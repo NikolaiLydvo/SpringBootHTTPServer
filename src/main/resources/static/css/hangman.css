@@ -1,0 +1,61 @@
+#bokstaver,#brukteBokstaver {
+    width:70%;
+    border:1px solid black;
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size:30px;
+}
+
+#ordet {
+    height:100px;
+    width:50%;
+    font-size:30px;
+    border:1px solid black;
+    padding:10px;
+    margin:auto;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    height:60px;
+}
+
+#hengemann {
+    width:30%;
+    border:1px solid black;
+    margin:auto;
+}
+
+img {width:100%}
+
+#ordInputDiv {margin:auto;width:18%}
+
+div:not(#spillTypeValg,#brukteBokstaver){padding:5px;}
+
+#spillTypeValg {
+    padding-left:33%
+}
+
+button:not(#velgeknapp){
+    width:25%;
+    height:50px;
+}
+
+#velkommen {
+    margin:auto;
+    text-align:center
+}
+
+#selvValgtOrdKnapp {
+    margin-left:75%;
+}
+
+#feilRiktig {
+    display:flex;
+    margin:auto;
+    width:25%;
+    justify-content: space-between;
+    height:50px;
+    padding-bottom:5px;
+}
