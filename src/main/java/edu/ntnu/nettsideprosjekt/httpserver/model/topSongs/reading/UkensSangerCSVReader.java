@@ -1,4 +1,4 @@
-package edu.ntnu.nettsideprosjekt.httpserver.model.topSongs;
+package edu.ntnu.nettsideprosjekt.httpserver.model.topSongs.reading;
 
 import java.io.*;
 import java.util.List;
