@@ -1,6 +1,6 @@
-package edu.ntnu.nettsideprosjekt.httpserver.readers;
+package edu.ntnu.nettsideprosjekt.httpserver.model.readers;
 
-import edu.ntnu.nettsideprosjekt.httpserver.readers.storageClasses.UkensSangerInfo;
+import edu.ntnu.nettsideprosjekt.httpserver.model.storageClasses.UkensSangerInfo;
 
 import java.io.*;
 import java.util.List;

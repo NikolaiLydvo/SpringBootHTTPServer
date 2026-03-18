@@ -1,5 +1,5 @@
-package edu.ntnu.nettsideprosjekt.httpserver.readers;
-import edu.ntnu.nettsideprosjekt.httpserver.readers.storageClasses.UkensAlbumInfo;
+package edu.ntnu.nettsideprosjekt.httpserver.model.readers;
+import edu.ntnu.nettsideprosjekt.httpserver.model.storageClasses.UkensAlbumInfo;
 
 import java.io.*;
 import java.util.ArrayList;
