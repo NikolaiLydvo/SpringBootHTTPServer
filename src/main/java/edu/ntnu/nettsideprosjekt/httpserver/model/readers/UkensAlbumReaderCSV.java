@@ -1,5 +1,5 @@
-package edu.ntnu.nettsideprosjekt.httpserver.readers;
-import edu.ntnu.nettsideprosjekt.httpserver.readers.storageClasses.UkensAlbumInfo;
+package edu.ntnu.nettsideprosjekt.httpserver.model.readers;
+import edu.ntnu.nettsideprosjekt.httpserver.model.storageClasses.UkensAlbumInfo;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ public class UkensAlbumReaderCSV {
     List<UkensAlbumInfo> list = new ArrayList<>();
     try (FileReader fileReader = new FileReader(this.csvFile); BufferedReader bufferedReader = new BufferedReader(fileReader)) {
       for (String s : bufferedReader.readAllLines()) {
-        String [] info = s.split(",");
+        String [] info = s.split(";");
         list.add(new UkensAlbumInfo(info[0],info[1],info[2]));
       }
     } catch (IOException e) {
