@@ -1,4 +1,4 @@
-package edu.ntnu.nettsideprosjekt.httpserver.model.storageClasses;
+package edu.ntnu.nettsideprosjekt.httpserver.model.topArtists.reading;
 
 public class UkensArtisterInfo {
   private final String artistName;

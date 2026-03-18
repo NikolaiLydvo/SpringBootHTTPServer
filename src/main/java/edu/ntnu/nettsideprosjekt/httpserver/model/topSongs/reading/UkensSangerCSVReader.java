@@ -1,6 +1,4 @@
-package edu.ntnu.nettsideprosjekt.httpserver.model.readers;
-
-import edu.ntnu.nettsideprosjekt.httpserver.model.storageClasses.UkensSangerInfo;
+package edu.ntnu.nettsideprosjekt.httpserver.model.topSongs.reading;
 
 import java.io.*;
 import java.util.List;

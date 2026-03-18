@@ -1,8 +1,8 @@
 package edu.ntnu.nettsideprosjekt.httpserver.controller;
 
-import edu.ntnu.nettsideprosjekt.httpserver.model.readers.UkensAlbumReaderCSV;
-import edu.ntnu.nettsideprosjekt.httpserver.model.readers.UkensArtisterCSVReader;
-import edu.ntnu.nettsideprosjekt.httpserver.model.readers.UkensSangerCSVReader;
+import edu.ntnu.nettsideprosjekt.httpserver.model.topAlbums.writing.UkensAlbumReaderCSV;
+import edu.ntnu.nettsideprosjekt.httpserver.model.topArtists.reading.UkensArtisterCSVReader;
+import edu.ntnu.nettsideprosjekt.httpserver.model.topSongs.reading.UkensSangerCSVReader;
 import edu.ntnu.nettsideprosjekt.httpserver.model.readers.VinylSamlingCSVReader;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.io.File;
 
 @org.springframework.stereotype.Controller
-public class Controller {
+public class EndpointController {
 
   @GetMapping("/vinylSamling")
   public String vinylSamling(Model model) {
