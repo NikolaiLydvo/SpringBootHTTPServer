@@ -2,7 +2,7 @@ package edu.ntnu.nettsideprosjekt.httpserver.model.topSongs.writing.GetSongsReco
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class GetsongsResponse{
+public class GetSongsResponse {
 
 	@JsonProperty("toptracks")
 	private Toptracks toptracks;
