@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.io.File;
 
 @org.springframework.stereotype.Controller
-public class Controller {
+public class EndpointController {
 
   @GetMapping("/vinylSamling")
   public String vinylSamling(Model model) {
