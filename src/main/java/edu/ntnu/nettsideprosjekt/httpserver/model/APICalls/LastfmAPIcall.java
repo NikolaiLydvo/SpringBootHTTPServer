@@ -12,7 +12,7 @@ import java.net.http.HttpResponse;
 public abstract class LastfmAPIcall {
   String USER;
   String API_KEY;
-  File credentials = new File("src/main/resources/LastFMcredentials.csv");
+  File credentials = new File("LastFMcredentials.csv");
 
   public LastfmAPIcall() {
     try (FileReader fr = new FileReader(credentials); BufferedReader bufferedReader = new BufferedReader(fr)) {

@@ -1,6 +1,7 @@
 package edu.ntnu.nettsideprosjekt.httpserver.controller.APIControllers.LastFM;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import org.springframework.scheduling.annotation.Scheduled;
 
 public class LastFMController {
   UpdateTopAlbumsController updateAlbums;
@@ -12,6 +13,7 @@ public class LastFMController {
     this.updateSongs = new UpdateTopSongsController();
   }
 
+  @Scheduled(cron = "0 0 0 * * 1")
   public void update() throws JsonProcessingException {
     updateAlbums.execute();
     updateArtists.execute();

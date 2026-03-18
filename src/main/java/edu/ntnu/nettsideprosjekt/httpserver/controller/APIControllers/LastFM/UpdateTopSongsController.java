@@ -15,7 +15,7 @@ public class UpdateTopSongsController {
   public UpdateTopSongsController(){
     this.getSongsAPICall = new GetSongsAPICall("6", "7day");
     this.getSongsJSONParser = new GetSongsJSONParser();
-    this.ukensSangerCSVWriter = new UkensSangerCSVWriter(new File("src/main/resources/ukensSanger.csv"));
+    this.ukensSangerCSVWriter = new UkensSangerCSVWriter(new File("ukensSanger.csv"));
   }
 
   public void execute() throws JsonProcessingException {

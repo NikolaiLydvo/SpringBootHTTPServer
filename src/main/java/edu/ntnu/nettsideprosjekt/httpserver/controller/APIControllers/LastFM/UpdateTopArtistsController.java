@@ -15,7 +15,7 @@ public class UpdateTopArtistsController {
   public UpdateTopArtistsController() {
     this.getArtistsAPICall = new GetArtistsAPICall("6","7day");
     this.getArtistsJSONParser = new GetArtistsJSONParser();
-    this.ukensArtisterCSVWriter = new UkensArtisterCSVWriter(new File("src/main/resources/ukensArtister.csv"));
+    this.ukensArtisterCSVWriter = new UkensArtisterCSVWriter(new File("ukensArtister.csv"));
   }
 
   public void execute() throws JsonProcessingException {
