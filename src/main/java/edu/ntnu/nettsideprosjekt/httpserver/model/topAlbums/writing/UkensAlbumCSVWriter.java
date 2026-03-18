@@ -1,6 +1,6 @@
-package edu.ntnu.nettsideprosjekt.httpserver.model.writers;
+package edu.ntnu.nettsideprosjekt.httpserver.model.topAlbums.writing;
 
-import edu.ntnu.nettsideprosjekt.httpserver.model.JSONParsers.GetAlbumsRecords.*;
+import edu.ntnu.nettsideprosjekt.httpserver.model.topAlbums.writing.GetAlbumsRecords.*;
 
 import java.io.*;
 

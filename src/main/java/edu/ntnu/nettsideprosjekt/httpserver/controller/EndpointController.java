@@ -1,8 +1,8 @@
 package edu.ntnu.nettsideprosjekt.httpserver.controller;
 
-import edu.ntnu.nettsideprosjekt.httpserver.model.readers.UkensAlbumReaderCSV;
-import edu.ntnu.nettsideprosjekt.httpserver.model.readers.UkensArtisterCSVReader;
-import edu.ntnu.nettsideprosjekt.httpserver.model.readers.UkensSangerCSVReader;
+import edu.ntnu.nettsideprosjekt.httpserver.model.topAlbums.writing.UkensAlbumReaderCSV;
+import edu.ntnu.nettsideprosjekt.httpserver.model.topArtists.reading.UkensArtisterCSVReader;
+import edu.ntnu.nettsideprosjekt.httpserver.model.topSongs.UkensSangerCSVReader;
 import edu.ntnu.nettsideprosjekt.httpserver.model.readers.VinylSamlingCSVReader;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,6 +1,4 @@
-package edu.ntnu.nettsideprosjekt.httpserver.model.readers;
-
-import edu.ntnu.nettsideprosjekt.httpserver.model.storageClasses.UkensArtisterInfo;
+package edu.ntnu.nettsideprosjekt.httpserver.model.topArtists.reading;
 
 import java.io.*;
 import java.util.List;

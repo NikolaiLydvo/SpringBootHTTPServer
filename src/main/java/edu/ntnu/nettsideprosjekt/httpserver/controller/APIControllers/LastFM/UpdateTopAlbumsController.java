@@ -1,18 +1,18 @@
-package edu.ntnu.nettsideprosjekt.httpserver.controller;
+package edu.ntnu.nettsideprosjekt.httpserver.controller.APIControllers.LastFM;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import edu.ntnu.nettsideprosjekt.httpserver.model.APIcallers.GetAlbumsAPICall;
-import edu.ntnu.nettsideprosjekt.httpserver.model.JSONParsers.GetAlbumJSONParser;
-import edu.ntnu.nettsideprosjekt.httpserver.model.JSONParsers.GetAlbumsRecords.GetAlbumsResponse;
-import edu.ntnu.nettsideprosjekt.httpserver.model.writers.UkensAlbumCSVWriter;
+import edu.ntnu.nettsideprosjekt.httpserver.model.topAlbums.writing.GetAlbumJSONParser;
+import edu.ntnu.nettsideprosjekt.httpserver.model.topAlbums.writing.GetAlbumsAPICall;
+import edu.ntnu.nettsideprosjekt.httpserver.model.topAlbums.writing.GetAlbumsRecords.*;
+import edu.ntnu.nettsideprosjekt.httpserver.model.topAlbums.writing.UkensAlbumCSVWriter;
 
 import java.io.File;
 
-public class LastfmAPIController {
+public class UpdateTopAlbumsController {
   GetAlbumsAPICall getAlbumsAPICall;
   GetAlbumJSONParser getAlbumJSONParser;
   UkensAlbumCSVWriter ukensAlbumCSVWriter;
-  public LastfmAPIController() {
+  public UpdateTopAlbumsController() {
     this.getAlbumsAPICall = new GetAlbumsAPICall("6","7day");
     this.getAlbumJSONParser = new GetAlbumJSONParser();
     this.ukensAlbumCSVWriter = new UkensAlbumCSVWriter(new File("src/main/resources/ukensAlbum.csv"));
@@ -24,8 +24,4 @@ public class LastfmAPIController {
     ukensAlbumCSVWriter.write(getAlbumsResponse);
   }
 
-  static void main(String[] args) throws JsonProcessingException {
-    LastfmAPIController lastfmAPIController = new LastfmAPIController();
-    lastfmAPIController.execute();
-  }
 }

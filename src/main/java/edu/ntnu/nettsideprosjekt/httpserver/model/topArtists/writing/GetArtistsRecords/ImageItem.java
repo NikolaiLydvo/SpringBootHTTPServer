@@ -1,4 +1,4 @@
-package edu.ntnu.nettsideprosjekt.httpserver.model.JSONParsers.GetAlbumsRecords;
+package edu.ntnu.nettsideprosjekt.httpserver.model.topArtists.writing.GetArtistsRecords;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

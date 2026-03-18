@@ -1,4 +1,4 @@
-package edu.ntnu.nettsideprosjekt.httpserver.model.storageClasses;
+package edu.ntnu.nettsideprosjekt.httpserver.model.topSongs;
 
 public class UkensSangerInfo {
   private final String rank;
