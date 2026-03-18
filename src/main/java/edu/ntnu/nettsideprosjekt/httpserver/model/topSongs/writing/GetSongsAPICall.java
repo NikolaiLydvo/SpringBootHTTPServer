@@ -34,8 +34,4 @@ public class GetSongsAPICall extends LastfmAPIcall{
     }
     return null;
   }
-  public static void main(String[] args) {
-    GetSongsAPICall test =  new GetSongsAPICall("6","7day");
-    System.out.println(test.call());
-  }
 }

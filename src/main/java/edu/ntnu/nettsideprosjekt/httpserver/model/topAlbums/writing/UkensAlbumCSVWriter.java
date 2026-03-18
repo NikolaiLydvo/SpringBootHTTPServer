@@ -18,7 +18,7 @@ public class UkensAlbumCSVWriter {
         stringBuilder.append(";");
         stringBuilder.append(a.getArtist().getName());
         stringBuilder.append(";");
-        stringBuilder.append(a.getUrl());
+        stringBuilder.append(a.getImage().getLast().getText());
         stringBuilder.append("\n");
       }
       bufferedWriter.write(stringBuilder.toString());

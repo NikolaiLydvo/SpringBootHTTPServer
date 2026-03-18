@@ -10,8 +10,7 @@ public class GetSongsJSONParser {
   }
   public GetSongsResponse parse(String response) throws JsonProcessingException {
     ObjectMapper mapper = new ObjectMapper();
-    GetSongsAPICall request = new GetSongsAPICall("6","7day");
-    GetSongsResponse parsed = mapper.readValue(request.call(), GetSongsResponse.class);
+    GetSongsResponse parsed = mapper.readValue(response, GetSongsResponse.class);
     return parsed;
   }
 }

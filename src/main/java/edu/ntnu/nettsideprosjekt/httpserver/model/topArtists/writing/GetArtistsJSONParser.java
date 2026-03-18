@@ -10,8 +10,7 @@ public class GetArtistsJSONParser {
   }
   public GetArtistsResponse parse(String response) throws JsonProcessingException {
     ObjectMapper mapper = new ObjectMapper();
-    GetArtistsAPICall request = new GetArtistsAPICall("6","7day");
-    GetArtistsResponse parsed = mapper.readValue(request.call(), GetArtistsResponse.class);
+    GetArtistsResponse parsed = mapper.readValue(response, GetArtistsResponse.class);
     return parsed;
   }
 }

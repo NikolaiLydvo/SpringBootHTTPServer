@@ -19,6 +19,7 @@ public class UkensSangerCSVWriter {
         builder.append(";");
         builder.append(t.getName());
         builder.append(";");
+        builder.append("Avspillinger: ");
         builder.append(t.getPlaycount());
         builder.append("\n");
       }

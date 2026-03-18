@@ -10,8 +10,7 @@ public class GetAlbumJSONParser {
   }
   public GetAlbumsResponse parse(String response) throws JsonProcessingException {
     ObjectMapper mapper = new ObjectMapper();
-    GetAlbumsAPICall request = new GetAlbumsAPICall("6","7day");
-    GetAlbumsResponse parsed = mapper.readValue(request.call(),GetAlbumsResponse.class);
+    GetAlbumsResponse parsed = mapper.readValue(response,GetAlbumsResponse.class);
     return parsed;
   }
 }

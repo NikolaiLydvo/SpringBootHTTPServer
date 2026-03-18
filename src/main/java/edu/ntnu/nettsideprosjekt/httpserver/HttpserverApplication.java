@@ -1,4 +1,4 @@
-package edu.ntnu.nettsideprosjekt.httpserver.view;
+package edu.ntnu.nettsideprosjekt.httpserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -33,9 +33,4 @@ public class GetArtistsAPICall extends LastfmAPIcall {
     }
     return null;
   }
-
-  public static void main(String[] args) {
-    GetArtistsAPICall test = new GetArtistsAPICall("6","7day");
-    System.out.println(test.call());
-  }
 }

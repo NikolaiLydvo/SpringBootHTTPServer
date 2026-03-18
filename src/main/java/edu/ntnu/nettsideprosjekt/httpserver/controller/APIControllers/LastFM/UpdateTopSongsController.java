@@ -13,7 +13,7 @@ public class UpdateTopSongsController {
   GetSongsJSONParser getSongsJSONParser;
   UkensSangerCSVWriter ukensSangerCSVWriter;
   public UpdateTopSongsController(){
-    this.getSongsAPICall = new GetSongsAPICall("6", "7day");
+    this.getSongsAPICall = new GetSongsAPICall("5", "7day");
     this.getSongsJSONParser = new GetSongsJSONParser();
     this.ukensSangerCSVWriter = new UkensSangerCSVWriter(new File("ukensSanger.csv"));
   }
