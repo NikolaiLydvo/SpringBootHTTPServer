@@ -20,7 +20,7 @@ public class VinylSamlingCSVReader {
     List<VinylAlbumInfo> list = new ArrayList<VinylAlbumInfo>();
     try (BufferedReader bufferedReader = new BufferedReader(new FileReader(csvFile))) {
       for (String s : bufferedReader.readAllLines()) {
-        String[] split = s.split(";");
+        String[] split = s.split(",");
         list.add(new VinylAlbumInfo(split[0], split[1], split[2], split[3]));
       }
 

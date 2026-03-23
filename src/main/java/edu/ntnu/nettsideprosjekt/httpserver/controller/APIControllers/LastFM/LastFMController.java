@@ -13,7 +13,6 @@ public class LastFMController {
     this.updateSongs = new UpdateTopSongsController();
   }
 
-  @Scheduled(cron = "0 0 0 * * 1")
   public void update() throws JsonProcessingException {
     updateAlbums.execute();
     updateArtists.execute();

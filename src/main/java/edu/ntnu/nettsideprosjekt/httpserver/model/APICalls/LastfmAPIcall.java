@@ -33,6 +33,8 @@ public abstract class LastfmAPIcall {
       HttpRequest request = requestBuilder.build();
       HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
       System.out.println(response);
+      System.out.println(response.statusCode());
+      System.out.println(response.body());
       return response.body();
     } catch (IOException | InterruptedException e) {
       e.printStackTrace();

@@ -1,4 +1,4 @@
-package edu.ntnu.nettsideprosjekt.httpserver.model.topAlbums.writing;
+package edu.ntnu.nettsideprosjekt.httpserver.model.topAlbums.reading;
 
 import java.io.*;
 import java.util.ArrayList;

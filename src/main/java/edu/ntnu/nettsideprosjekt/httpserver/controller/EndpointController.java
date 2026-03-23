@@ -1,6 +1,8 @@
 package edu.ntnu.nettsideprosjekt.httpserver.controller;
 
-import edu.ntnu.nettsideprosjekt.httpserver.model.topAlbums.writing.UkensAlbumReaderCSV;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import edu.ntnu.nettsideprosjekt.httpserver.controller.APIControllers.LastFM.LastFMController;
+import edu.ntnu.nettsideprosjekt.httpserver.model.topAlbums.reading.UkensAlbumReaderCSV;
 import edu.ntnu.nettsideprosjekt.httpserver.model.topArtists.reading.UkensArtisterCSVReader;
 import edu.ntnu.nettsideprosjekt.httpserver.model.topSongs.reading.UkensSangerCSVReader;
 import edu.ntnu.nettsideprosjekt.httpserver.model.readers.VinylSamlingCSVReader;
@@ -27,7 +29,10 @@ public class EndpointController {
     return "ukasAlbum";
   }
   @GetMapping("ukensMusikk")
-  public String ukasMusikk(Model model) {
+  public String ukasMusikk(Model model) throws JsonProcessingException {
+    //LastFMController apiController = new LastFMController();
+    //apiController.update();
+
     File ukensAlbumCsvFile = new File("ukensAlbum.csv");
     File ukensArtisterCsvFile = new File("ukensArtister.csv");
     File ukensSangerCsvFile = new File("ukensSanger.csv");

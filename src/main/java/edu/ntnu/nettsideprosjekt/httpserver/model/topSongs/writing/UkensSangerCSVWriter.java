@@ -27,5 +27,6 @@ public class UkensSangerCSVWriter {
     } catch (IOException e) {
       System.out.println("Error writing to file in UkensSangerCSVWriter");
     }
+    System.out.println("Success writing songs to file!");
   }
 }

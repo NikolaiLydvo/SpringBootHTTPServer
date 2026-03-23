@@ -24,5 +24,6 @@ public class UkensArtisterCSVWriter {
     } catch  (IOException e) {
       System.out.println("error writing to file in UkensArtisterCSVWriter");
     }
+    System.out.println("Success writing artists to file!");
   }
 }
