@@ -1,8 +1,10 @@
 package edu.ntnu.nettsideprosjekt.httpserver.controller;
 
-import edu.ntnu.nettsideprosjekt.httpserver.model.readers.UkensAlbumReaderCSV;
-import edu.ntnu.nettsideprosjekt.httpserver.model.readers.UkensArtisterCSVReader;
-import edu.ntnu.nettsideprosjekt.httpserver.model.readers.UkensSangerCSVReader;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import edu.ntnu.nettsideprosjekt.httpserver.controller.APIControllers.LastFM.LastFMController;
+import edu.ntnu.nettsideprosjekt.httpserver.model.topAlbums.reading.UkensAlbumReaderCSV;
+import edu.ntnu.nettsideprosjekt.httpserver.model.topArtists.reading.UkensArtisterCSVReader;
+import edu.ntnu.nettsideprosjekt.httpserver.model.topSongs.reading.UkensSangerCSVReader;
 import edu.ntnu.nettsideprosjekt.httpserver.model.readers.VinylSamlingCSVReader;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,7 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.io.File;
 
 @org.springframework.stereotype.Controller
-public class Controller {
+public class EndpointController {
 
   @GetMapping("/vinylSamling")
   public String vinylSamling(Model model) {
@@ -27,7 +29,10 @@ public class Controller {
     return "ukasAlbum";
   }
   @GetMapping("ukensMusikk")
-  public String ukasMusikk(Model model) {
+  public String ukasMusikk(Model model) throws JsonProcessingException {
+    //LastFMController apiController = new LastFMController();
+    //apiController.update();
+
     File ukensAlbumCsvFile = new File("ukensAlbum.csv");
     File ukensArtisterCsvFile = new File("ukensArtister.csv");
     File ukensSangerCsvFile = new File("ukensSanger.csv");

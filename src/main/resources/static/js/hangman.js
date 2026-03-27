@@ -69,7 +69,7 @@ function knappTrykk(bokstav){
        feil += 1
        document.getElementById("feilCounter").innerHTML = "Feil: " + feil
        document.getElementById("brukteBokstaver").innerHTML += bokstaven.innerHTML
-       document.getElementById("hengern").src = "bilder/bilde" + feil + ".jpg"
+       document.getElementById("hengern").src = "/images/hangmanImages/bilde" + feil + ".jpg"
     }
     if(riktige == riktigOrdMengde){
         alert("Gratulerer, du vant")
