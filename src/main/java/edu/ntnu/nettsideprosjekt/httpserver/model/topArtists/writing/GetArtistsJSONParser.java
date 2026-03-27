@@ -8,9 +8,14 @@ public class GetArtistsJSONParser {
   public GetArtistsJSONParser() {
 
   }
-  public GetArtistsResponse parse(String response) throws JsonProcessingException {
-    ObjectMapper mapper = new ObjectMapper();
-    GetArtistsResponse parsed = mapper.readValue(response, GetArtistsResponse.class);
-    return parsed;
+  public GetArtistsResponse parse(String response) {
+    try {
+      ObjectMapper mapper = new ObjectMapper();
+      GetArtistsResponse parsed = mapper.readValue(response, GetArtistsResponse.class);
+      return parsed;
+    } catch (JsonProcessingException e) {
+      System.out.println(e.getMessage());
+    }
+    return null;
   }
 }

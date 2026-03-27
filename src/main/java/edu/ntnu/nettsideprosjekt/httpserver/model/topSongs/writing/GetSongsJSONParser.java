@@ -8,9 +8,14 @@ public class GetSongsJSONParser {
   public GetSongsJSONParser() {
 
   }
-  public GetSongsResponse parse(String response) throws JsonProcessingException {
-    ObjectMapper mapper = new ObjectMapper();
-    GetSongsResponse parsed = mapper.readValue(response, GetSongsResponse.class);
-    return parsed;
+  public GetSongsResponse parse(String response) {
+    try {
+      ObjectMapper mapper = new ObjectMapper();
+      GetSongsResponse parsed = mapper.readValue(response, GetSongsResponse.class);
+      return parsed;
+    } catch  (JsonProcessingException e) {
+      System.out.println(e.getMessage());
+    }
+    return null;
   }
 }

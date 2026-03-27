@@ -18,7 +18,7 @@ public class UpdateTopAlbumsController {
     this.ukensAlbumCSVWriter = new UkensAlbumCSVWriter(new File("/ukensAlbum.csv"));
   }
 
-  public void execute() throws JsonProcessingException {
+  public void execute() {
     String APIresponse = getAlbumsAPICall.call();
     GetAlbumsResponse getAlbumsResponse = getAlbumJSONParser.parse(APIresponse);
     ukensAlbumCSVWriter.write(getAlbumsResponse);

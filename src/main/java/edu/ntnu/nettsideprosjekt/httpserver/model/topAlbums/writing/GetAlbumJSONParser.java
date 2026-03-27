@@ -8,9 +8,14 @@ public class GetAlbumJSONParser {
   public GetAlbumJSONParser() {
 
   }
-  public GetAlbumsResponse parse(String response) throws JsonProcessingException {
-    ObjectMapper mapper = new ObjectMapper();
-    GetAlbumsResponse parsed = mapper.readValue(response,GetAlbumsResponse.class);
-    return parsed;
+  public GetAlbumsResponse parse(String response) {
+    try {
+      ObjectMapper mapper = new ObjectMapper();
+      GetAlbumsResponse parsed = mapper.readValue(response, GetAlbumsResponse.class);
+      return parsed;
+    } catch (JsonProcessingException e) {
+      System.out.println(e.getMessage());
+    }
+    return null;
   }
 }

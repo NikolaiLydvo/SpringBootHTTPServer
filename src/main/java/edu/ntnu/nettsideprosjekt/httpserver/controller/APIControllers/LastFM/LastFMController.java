@@ -13,13 +13,13 @@ public class LastFMController {
     this.updateSongs = new UpdateTopSongsController();
   }
 
-  public void update() throws JsonProcessingException {
+  public void update() {
     updateAlbums.execute();
     updateArtists.execute();
     updateSongs.execute();
   }
 
-  public static void main(String[] args) throws JsonProcessingException {
+  public static void main(String[] args) {
     LastFMController lastFMController = new LastFMController();
     lastFMController.update();
   }

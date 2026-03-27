@@ -18,7 +18,7 @@ public class UpdateTopSongsController {
     this.ukensSangerCSVWriter = new UkensSangerCSVWriter(new File("ukensSanger.csv"));
   }
 
-  public void execute() throws JsonProcessingException {
+  public void execute() {
     String APIResponse = getSongsAPICall.call();
     GetSongsResponse getSongsResponse = getSongsJSONParser.parse(APIResponse);
     ukensSangerCSVWriter.write(getSongsResponse);
