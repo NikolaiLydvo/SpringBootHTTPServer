@@ -15,7 +15,7 @@ public class UpdateTopAlbumsController {
   public UpdateTopAlbumsController() {
     this.getAlbumsAPICall = new GetAlbumsAPICall("6","7day");
     this.getAlbumJSONParser = new GetAlbumJSONParser();
-    this.ukensAlbumCSVWriter = new UkensAlbumCSVWriter(new File("/ukensAlbum.csv"));
+    this.ukensAlbumCSVWriter = new UkensAlbumCSVWriter(new File("ukensAlbum.csv"));
   }
 
   public void execute() {

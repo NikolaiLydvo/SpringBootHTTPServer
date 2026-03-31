@@ -20,7 +20,7 @@ public abstract class LastfmAPIcall {
       this.API_KEY = line[0];
       this.USER = line[1];
     } catch (IOException e) {
-      System.out.println("Failed to initialize credentials for API request: GetAlbumsAPICall");
+      System.out.println("Failed to initialize credentials for API request");
     }
   }
 
