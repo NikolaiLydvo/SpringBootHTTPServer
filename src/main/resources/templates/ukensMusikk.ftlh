@@ -33,8 +33,8 @@
         </div>
         <#list songs as song>
             <div class="song">
-                <h2>${song.rank}: ${song.playcount}</h2>
-                <p>${song.trackName} - ${song.artistName}</p>
+                <h2>${song.rank}: ${song.trackName} - ${song.artistName}</h2>
+                <p>${song.playcount}</p>
             </div>
         </#list>
     </div>
